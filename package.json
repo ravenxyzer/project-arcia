@@ -1,0 +1,19 @@
+{
+  "name": "project-arcia",
+  "version": "1.0.0",
+  "description": "multi-purpose discord bot",
+  "license": "MIT",
+  "author": "RavenXyzer",
+  "type": "commonjs",
+  "main": "dist/arcia.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@sapphire/framework": "^5.5.0",
+    "@sapphire/plugin-utilities-store": "^2.0.3",
+    "@sapphire/time-utilities": "^1.7.14",
+    "discord.js": "^14.25.1",
+    "dotenv": "^17.3.1"
+  }
+}
