@@ -1,4 +1,5 @@
 import { Events, Listener } from "@sapphire/framework";
+import { ActivityType } from "discord.js";
 
 export class ReadyListener extends Listener {
     public constructor(context: Listener.LoaderContext, options: Listener.Options) {
@@ -11,5 +12,10 @@ export class ReadyListener extends Listener {
 
     public async run() {
         this.container.logger.info(`Logged in as ${this.container.client.user?.tag} (${this.container.client.user?.id})`);
+
+        this.container.client.user?.setActivity({
+            name: "You and beautiful world!",
+            type: ActivityType.Watching,
+        });
     }
 }
